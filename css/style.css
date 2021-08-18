@@ -1,0 +1,350 @@
+
+  .offs {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+ 
+
+  .ons{
+    transition: all 1.5s cubic-bezier(0, 0, 0.13, 0.79);
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+
+
+body {
+  font-size: 16px;
+  background-color: rgb(94, 87, 87);
+}
+
+/* header start */
+
+
+header {
+   height: 100px;
+   width: 100%;
+   margin: 0 auto;
+   position: absolute;
+   top: 0;
+   z-index: 10;
+}
+
+.header-all {
+  display: flex;
+  justify-content: space-between;
+ 
+
+}
+
+.header-left {
+  padding: 24px 0 24px 40px;
+}
+
+.header-right ul {
+  display: flex;
+  line-height: 100px;
+  padding-right: 32px;
+}
+
+.header-right li {
+  padding-right: 24px;
+  font-size: 24px;
+}
+
+.header-right a {
+  text-decoration: none;
+  color: black;
+}
+
+/* header end */
+
+/* top-visual start */
+
+.top-visual video {
+  opacity: 0.8;
+}
+
+/* top-visual end */
+
+/* profile start */
+
+.profile {
+  text-align: center;
+  width: 100%;
+  padding: 50px 0 100px;
+}
+
+.heading {
+  font-size: 48px;
+  letter-spacing: 5px;
+  padding: 50px 0;
+}
+
+.profile-content {
+  color: gray;
+}
+
+.profile-content img {
+  border-radius: 50%;
+}
+.profile-content h2 {
+  font-size: 32px;
+  padding: 16px 0;
+
+}
+.profile-content p {
+  font-size: 16px;
+  width: 30%;
+  margin: 0 auto;
+}
+
+
+
+/* profile end */
+
+/* works start */
+.works {
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+.container {
+  padding: 50px 0 150px;
+  background-color: white;
+  width: 90%;
+  margin: 0 auto;
+  
+}
+
+
+
+.works ul {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.works li {
+  width: 30%;
+  color: gray;
+}
+
+.works ul li img{
+  width: 100%;
+  border: gray 1px solid;
+  border-radius: 2px;
+}
+
+.works li p {
+  font-size: 24px;
+  padding-top: 16px;
+  width: 100%;
+}
+
+/* works end */
+
+/* menu start */
+
+.menu {
+  text-align: center;
+}
+
+.menu-content li {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin: 48px auto;
+  
+}
+
+.menu-content li img {
+  border: 1px solid gray;
+}
+
+.menu-text {
+  margin: 0 auto;
+  font-size: 32px;
+  padding-top: 32px;
+  color: gray;
+}
+
+.menu-text h2 {
+  padding-bottom: 32px;
+}
+
+/* menu end */
+
+/* hobby start */
+
+.hobby {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.hobby-content ul {
+  display: flex;
+  justify-content: center;
+
+}
+
+.hobby-content li  {
+  padding: 40px 16px 0;
+  
+}
+
+.hobby-content li p {
+  font-size: 24px;
+  background: linear-gradient(transparent 50%, rgb(255, 213, 134) 50%);
+  width: 70%;
+  margin: 0 auto;
+  color: gray;
+}
+
+.hobby-content li img {
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+
+/* hobby end */
+
+/* contact start */
+
+.contact {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 150px;
+}
+
+.contact-text {
+  text-align: left;
+  width: 70%;
+  margin: 0 auto;
+  font-size: 40px;
+}
+
+.contact-text p {
+  font-size: 30px;
+  color: gray;
+  padding-bottom: 16px;
+  
+}
+
+.contact-text h2 {
+  padding-bottom: 48px;
+
+}
+
+/* contact end */
+
+footer {
+  height: 100px;
+  background-color: black;
+  text-align: center;
+}
+
+footer p {
+  font-size: 16px;
+  color: gray;
+  line-height: 100px;
+}
+
+#page-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 77%;
+}
+#page-top a {
+  background: #666;
+  text-decoration: none;
+  color: #fff;
+  width: 100px;
+  padding: 30px 0;
+  text-align: center;
+  display: block;
+  border-radius: 5px;
+}
+#page-top a:hover {
+  background: #999;
+}
+
+@media (max-width: 670px) {
+  header {
+    background-color: white;
+    height: 150px;
+  }
+
+  .header-all {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .header-right li {
+    line-height: 0;
+
+  }
+
+  .header-right ul {
+    padding-left: 8px;
+  }
+
+
+  video {
+    width: 100%;
+    margin-top: 150px;
+  }
+
+  .container {
+    padding-top: 0;
+    padding-bottom: 50px;
+  }
+
+  .profile-content p {
+    font-size: 16px;
+    line-height: 32px;
+    width: 90%;
+    text-align: left;
+}
+
+.works ul {
+  flex-direction: column;
+  width: 90%;
+}
+.works li {
+  width: 100%;
+  padding-bottom: 32px;
+}
+
+.menu-content li {
+  flex-direction: column;
+  width: 100%;
+    
+}
+
+.menu-content li:nth-child(1) {
+  margin-top: 0;
+}
+
+.hobby-content ul {
+  flex-direction: column;
+}
+
+.contact-text  h2 {
+  font-size: 24px;
+}
+
+.contact-text  p {
+  font-size: 16px;
+}
+
+.contact {
+
+  margin-bottom: 50px;
+}
+
+footer p {
+  font-size: 16px;
+}
+}
